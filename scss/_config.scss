@@ -1,0 +1,18 @@
+$primary-color:#0D1B2A;
+$secondary-color: #1B263B;
+$terceary-color: #415A77;
+$forth-color:#778DA9;
+$fifth-color: #E0E1DD;
+$linear-gradient: linear-gradient(
+        45deg, 
+        hsla(211, 53%, 11%, 1) 0%, 
+        hsla(219, 37%, 17%, 1) 50%,
+        hsla(211, 53%, 11%, 1) 100%
+     );
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
