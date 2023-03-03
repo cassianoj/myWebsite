@@ -1,3 +1,34 @@
 .projects{
-    
+    &_title{
+        height: 40vh;
+        display: flex;
+        font-size: 3rem;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        color: $terceary-color; 
+        background: $linear-gradient-opacity, url('../img/model-1.jpg') center top;
+        background-size: cover;
+    }
+
+    &_items{
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+    }
+
+    &_item{
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor: pointer;
+
+        img{
+            width: 100%;
+        }
+    }
 }

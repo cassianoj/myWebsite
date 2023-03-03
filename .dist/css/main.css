@@ -192,6 +192,35 @@
   translate: 2.5rem -3.5rem;
 }
 
+.projects_title {
+  height: 40vh;
+  display: flex;
+  font-size: 3rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  color: #415A77;
+  background: linear-gradient(45deg, hsla(211, 53%, 11%, 0.5) 0%, hsla(212, 29%, 36%, 0.2) 50%, hsla(211, 53%, 11%, 0.5) 100%), url("../img/model-1.jpg") center top;
+  background-size: cover;
+}
+.projects_items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.projects_item {
+  position: relative;
+  border-bottom: 5px solid #1B263B;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects_item img {
+  width: 100%;
+}
+
 body {
   color: #fff;
   height: 100vh;
