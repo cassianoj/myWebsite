@@ -14,7 +14,7 @@
         top: 0.5rem;
         width: 28px;
         height: 3px;
-        background-color: set-text-color($primary-color);
+        background-color: $terceary-color;
         @include transition-ease;
 
         
@@ -73,11 +73,11 @@
         justify-content: center;
         height: 100vh;
         overflow: hidden;
-        background: $primary-color;
+        background: $linear-gradient;
         list-style-type: none;
         padding-right: 1rem;
         transform: translateX(100%);
-        max-width: 50vw;
+        // max-width: 50vw;
         @include transition-ease;
 
         &.open{
@@ -93,7 +93,8 @@
             }
 
             &.active > a {
-                color: $secondary-color;
+                color: $primary-color;
+                transform: scale(1.05);
             }
         }
         
@@ -109,7 +110,9 @@
 
             &:hover{
                 color: set-text-color($primary-color);
+                transform: scale(1.05);
             }
+            
         }
     }
 }
