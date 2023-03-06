@@ -23,12 +23,66 @@
 
     &_item{
         position: relative;
-        border-bottom: 5px solid $secondary-color;
+        border-bottom: 5px solid $terceary-color;
         overflow: hidden;
         cursor: pointer;
 
         img{
             width: 100%;
+        }        
+
+        &::after{
+            content:'';
+            position: absolute;
+            top:100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $terceary-color;
+            opacity: 0;
+            @include transition-ease;
         }
+        &:hover{
+            &::after {
+                top:0;
+                opacity: 0.9;                
+            }
+
+            .projects_icon_link{
+                visibility: visible;
+            }
+        }  
+
+        .projects_icon_link{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+            visibility: hidden;
+        } 
+        .project_title{
+            margin-bottom: 2px;
+        }
+        
+        .project_link{            
+            &:hover{
+                color: $primary-color;
+                @include transition-ease;
+            }
+        }
+    }
+
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        rotate: 90deg;
+        translate: 60px -50px;
     }
 }
