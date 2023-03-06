@@ -1,0 +1,37 @@
+.contact{
+
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: $linear-gradient-opacity, url('../img/model-1.jpg') center top;
+    background-size: cover;
+
+    h2{
+        font-size: 4rem;
+        color: $terceary-color;
+    }
+    
+    &_icons{
+        margin: 2rem auto 5rem auto;
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        .icon_text{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+                &:hover{
+                    @include transition-ease;
+                    color: $secondary-color;
+                }
+        }
+
+    }
+
+
+}
