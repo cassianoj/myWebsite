@@ -209,13 +209,13 @@
   margin: 2rem auto 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
 }
 .projects_item {
   position: relative;
   border-bottom: 5px solid #415A77;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 2rem;
 }
 .projects_item img {
   width: 100%;

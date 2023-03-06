@@ -1,4 +1,5 @@
 .projects{
+
     &_title{
         height: 40vh;
         display: flex;
@@ -17,7 +18,6 @@
         margin: 2rem auto 0 auto;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2rem;
 
     }
 
@@ -26,6 +26,7 @@
         border-bottom: 5px solid $terceary-color;
         overflow: hidden;
         cursor: pointer;
+        margin-bottom: 2rem;
 
         img{
             width: 100%;
