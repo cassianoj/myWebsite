@@ -77,11 +77,10 @@
         list-style-type: none;
         padding-right: 1rem;
         transform: translateX(100%);
-        // max-width: 50vw;
         @include transition-ease;
 
         &.open{
-            transform: translateX(0);
+            transform: translateX(0%);
         }
 
         &__items{
