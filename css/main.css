@@ -234,7 +234,6 @@
 .projects_item:hover::after {
   top: 0;
   opacity: 0.9;
-  
 }
 .projects_item:hover .projects_icon_link {
   visibility: visible;
