@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(45deg, hsla(211, 53%, 11%, 0.5) 0%, hsla(212, 29%, 36%, 0.2) 50%, hsla(211, 53%, 11%, 0.5) 100%), url("../img/model-1.jpg") center top;
+  background-size: cover;
+}
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+}
+.home__name--last {
+  color: #415A77;
+  font-weight: 700;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background-color: #415A77;
+  transition: all 0.8s ease-in-out;
+}
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.8s ease-in-out;
+}
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.8s ease-in-out;
+}
+.menu-btn__burger.open {
+  transform: rotate(360deg);
+  background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(45deg, hsl(211, 53%, 11%) 0%, hsl(212, 29%, 36%) 50%, hsl(211, 53%, 11%) 100%);
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateX(100%);
+  transition: all 0.8s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateX(0%);
+}
+.nav .menu-nav__items {
+  transform: translateX(100vw);
+  transition: all 0.8s ease-in-out;
+}
+.nav .menu-nav__items.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__items.active > a {
+  color: #0D1B2A;
+  transform: scale(1.05);
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: capitalize;
+  padding: 2rem 0;
+  font-weight: 300;
+  color: #778DA9;
+  transition: all 0.8s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.menu-nav__items:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav__items:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav__items:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav__items:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+.about_me {
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 1rem;
+  background: linear-gradient(45deg, hsla(211, 53%, 11%, 0.5) 0%, hsla(212, 29%, 36%, 0.2) 50%, hsla(211, 53%, 11%, 0.5) 100%), url("../img/model-1.jpg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about_me_title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #415A77;
+}
+.about_me_description {
+  width: 90%;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.about .jobs {
+  margin-bottom: 2rem;
+  width: 60vw;
+  margin: 2rem auto 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs_job {
+  background-color: #778DA9;
+  border-bottom: 5px solid #1B263B;
+}
+.about .jobs_job h2, .about .jobs_job h3, .about .jobs_job h6 {
+  padding: 0.25rem;
+  color: #0D1B2A;
+}
+.about .jobs_job p {
+  text-align: justify;
+  padding: 0.25rem;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  rotate: 90deg;
+  translate: 2.5rem -3.5rem;
+}
+
+.projects_title {
+  height: 40vh;
+  display: flex;
+  font-size: 3rem;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  color: #415A77;
+  background: linear-gradient(45deg, hsla(211, 53%, 11%, 0.5) 0%, hsla(212, 29%, 36%, 0.2) 50%, hsla(211, 53%, 11%, 0.5) 100%), url("../img/model-1.jpg") center top;
+  background-size: cover;
+}
+.projects_items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.projects_item {
+  position: relative;
+  border-bottom: 5px solid #415A77;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.projects_item img {
+  width: 100%;
+}
+.projects_item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #415A77;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+.projects_item:hover::after {
+  top: 0;
+  opacity: 0.9;
+  
+}
+.projects_item:hover .projects_icon_link {
+  visibility: visible;
+}
+.projects_item .projects_icon_link {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  visibility: hidden;
+}
+.projects_item .project_title {
+  margin-bottom: 2px;
+}
+.projects_item .project_link:hover {
+  color: #0D1B2A;
+  transition: all 0.8s ease-in-out;
+}
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.projects footer {
+  rotate: 90deg;
+  translate: 60px -50px;
+}
+
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, hsla(211, 53%, 11%, 0.5) 0%, hsla(212, 29%, 36%, 0.2) 50%, hsla(211, 53%, 11%, 0.5) 100%), url("../img/model-1.jpg") center top;
+  background-size: cover;
+}
+.contact h2 {
+  font-size: 3.5rem;
+  color: #415A77;
+  margin-bottom: 2rem;
+}
+.contact_icons {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  font-size: 1.8rem;
+}
+.contact_icons .icon_text:hover {
+  transition: all 0.8s ease-in-out;
+  color: #1B263B;
+}
+.contact .social-icons {
+  transition: all 0.8s ease-in-out;
+  position: initial;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 50vw;
+  }
+  .nav .menu-nav {
+    transform: translate(200%);
+  }
+  .nav .menu-nav.open {
+    transform: translate(100%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translate(100%, 15%);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__items {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .about_me_title {
+    font-size: 5rem;
+  }
+  .about_me_description {
+    font-size: 1.25rem;
+  }
+  .projects_items {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .projects_items {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+body {
+  color: #fff;
+  height: 100vh;
+  font-family: "Segoe UI", "Tahoma", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  background: #E0E1DD;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main .social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+main .social-icons a {
+  padding: 0.4rem;
+  transition: all 0.8s ease-in-out;
+}
+main .social-icons a:hover {
+  color: #1B263B;
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */
