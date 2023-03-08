@@ -10,7 +10,7 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(45deg, hsla(211, 53%, 11%, 0.5) 0%, hsla(212, 29%, 36%, 0.2) 50%, hsla(211, 53%, 11%, 0.5) 100%), url("img/model-1.jpg") center top;
+  background: linear-gradient(45deg, hsla(211, 53%, 11%, 0.5) 0%, hsla(212, 29%, 36%, 0.2) 50%, hsla(211, 53%, 11%, 0.5) 100%), url("../img/model-1.jpg") center top;
   background-size: cover;
 }
 .home__name {
