@@ -162,6 +162,7 @@
   color: #fff;
   font-weight: 700;
   text-align: center;
+  line-height: 1.3;
 }
 .about .jobs {
   margin-bottom: 2rem;
@@ -174,6 +175,7 @@
 .about .jobs_job {
   background-color: #778DA9;
   border-bottom: 5px solid #1B263B;
+  border: 1px solid black;
 }
 .about .jobs_job h2, .about .jobs_job h3, .about .jobs_job h6 {
   padding: 0.25rem;
@@ -182,6 +184,13 @@
 .about .jobs_job p {
   text-align: justify;
   padding: 0.25rem;
+}
+.about .jobs_job .ulist {
+  list-style-position: inside;
+  padding: 0.25rem 1rem;
+}
+.about .jobs_job .ulist .lista {
+  list-style-type: circle;
 }
 .about .social-icons {
   display: flex;
