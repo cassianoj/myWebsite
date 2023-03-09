@@ -1,7 +1,6 @@
 .contact{
     height: 100%;
     padding-top: 40vh;
-    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -26,14 +25,19 @@
                 @include transition-ease;
                 color: $secondary-color;
             }
+            
+            .maps{
+                margin: 1rem 0;
+            }
         }
+
 
     }
 
     .social-icons{
         @include transition-ease;
-        position: initial;
-        margin-top: 2rem;
+        // position: initial;
+        // margin-top: 2rem;
     }
 
 
